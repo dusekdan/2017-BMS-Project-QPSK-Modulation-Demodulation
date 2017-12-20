@@ -86,7 +86,6 @@ void QPSKModulation(std::istream* dataStream, int &startTick, SndfileHandle hand
             {
                 buffer [i] = AMPLITUDE * cos((FREQ * 2 * startTick * M_PI) + (M_PI/4));
                 startTick++;
-                std::cout << "Value: " << buffer [i] << "\n";
             }
         }
         else if (value0 == 0 && value1 == 1)
@@ -95,7 +94,6 @@ void QPSKModulation(std::istream* dataStream, int &startTick, SndfileHandle hand
             {
                 buffer [i] = AMPLITUDE * cos((FREQ * 2 * startTick * M_PI) + (7*M_PI/4));
                 startTick++;
-                std::cout << "Value: " << buffer [i] << "\n";
             }
         }
         else if (value0 == 1 && value1 == 0)
@@ -104,7 +102,6 @@ void QPSKModulation(std::istream* dataStream, int &startTick, SndfileHandle hand
             {
                 buffer [i] = AMPLITUDE * cos((FREQ * 2 * startTick * M_PI) + (3*M_PI/4));    
                 startTick++;
-                std::cout << "Value: " << buffer [i] << "\n";
             }
         }
         else
@@ -113,7 +110,6 @@ void QPSKModulation(std::istream* dataStream, int &startTick, SndfileHandle hand
             {
                 buffer [i] = AMPLITUDE * cos((FREQ * 2 * startTick * M_PI) + (5*M_PI/4));
                 startTick++;
-                std::cout << "Value: " << buffer [i] << "\n";
             }
          }
     
