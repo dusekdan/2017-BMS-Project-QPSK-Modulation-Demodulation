@@ -15,7 +15,8 @@ clean:
 	rm -f *.o bms2A bms2B
 
 test: all
-	./bms2A "test-input/example.txt"
+	./bms2B "test-input/example.wav"
+	#./bms2A "test-input/example.txt"
 
 generate-test-output:
 	./bms2A "tests01/01.txt"
