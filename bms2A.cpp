@@ -72,7 +72,7 @@ void QPSKModulation(std::istream* dataStream, int &startTick, SndfileHandle hand
 {
     char c0, c1;
     int  value0, value1;
-    int *buffer = new int[30];
+    int *buffer = new int[SAMPLING_SHIFT];
 
     while (dataStream->get(c0) && dataStream->get(c1))
     {
